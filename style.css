@@ -1,0 +1,121 @@
+/* Colour Declaration */
+* {
+  width: auto;
+  height: auto;
+}
+
+:root {
+  --primary-brown: hsl(41, 40%, 56%);
+  --primary-blue: hsl(215, 94%, 19%);
+  --primary-black: hsl(0, 0%, 0%);
+  --primary-white: hsl(100, 100%, 100%);
+  --primary-green: rgb(28, 107, 38);
+}
+
+body {
+  background-color: var(--primary-black);
+}
+
+h1 {
+  color: var(--primary-white);
+}
+
+.counter-container {
+  background-image: url(./pic.jpeg);
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 650px;
+  background-position: center;
+  margin-left: 375px;
+  margin-top: 65px;
+  position: relative;
+}
+
+.counter-container-content {
+  background-image: url(./pic.jpeg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 550px;
+  width: 500px;
+  top: 10%;
+  left: 10.5%;
+  background-position: center;
+  z-index: 2;
+  border-color: var(--primary-white);
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 1px 2px 20px 2px var(--primary-black);
+}
+
+.counter-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+}
+
+.seven {
+  text-align: center;
+  font-size: 8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: var(--primary-green);
+}
+
+/* Button Styles */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--primary-blue);
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  color: var(--primary-white);
+  font-size: 1rem;
+  box-shadow: 0px 2px 18px 0px var(--primary-blue);
+}
+
+.add {
+  background-color: var(--primary-blue);
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  color: var(--primary-white);
+  font-size: 1rem;
+  box-shadow: 0px 2px 18px 0px var(--primary-blue);
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .counter-container {
+    width: 500px;
+    height: 700px;
+    margin-left: 275px;
+    margin-top: 45px;
+  }
+
+  .counter-container-content {
+    width: 350px;
+    height: 500px;
+  }
+
+  .counter-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .seven {
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .btn {
+    width: 100px;
+    height: 20px;
+    font-size: 0.5rem;
+  }
+}
