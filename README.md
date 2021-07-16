@@ -1,5 +1,7 @@
 # counter-app
 
+The bugs in this application was intentionally added because it was used for teaching the act of testing.
+
 Counter Application
 
 ACCEPTANCE CRITERIA
