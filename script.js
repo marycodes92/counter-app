@@ -23,6 +23,9 @@ buttons.forEach((button) => {
     if (count == 45 && currentBtn.contains('lower')) {
       count = 0
     }
+    if(count == 100 && currentBtn.contains("add")){
+      count = 100
+    }
     seven.textContent = count
   })
 })
