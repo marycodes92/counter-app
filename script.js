@@ -9,22 +9,12 @@ buttons.forEach((button) => {
   button.addEventListener('click', (e) => {
     let currentBtn = e.currentTarget.classList
 
-    if (currentBtn.contains('add')) {
+    if (currentBtn.contains('add') && count < 100) {
       count++
-    } else if (currentBtn.contains('lower')) {
+    } else if (currentBtn.contains('lower') && count > 0 && count != 45) {
       count--
-    } else {
+    } else if (currentBtn.contains('lower') && count === 45) {
       count = 0
-    }
-    // Adding range to the counter
-    if (count <= 0 && currentBtn.contains('lower')) {
-      count = 0
-    }
-    if (count == 45 && currentBtn.contains('lower')) {
-      count = 0
-    }
-    if(count == 100 && currentBtn.contains("add")){
-      count = 100
     }
     seven.textContent = count
   })
