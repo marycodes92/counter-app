@@ -11,11 +11,14 @@ buttons.forEach((button) => {
 
     if (currentBtn.contains('add') && count < 100) {
       count++
-    } else if (currentBtn.contains('lower') && count > 0 && count != 45) {
+    } else if (currentBtn.contains('lower') && count > 0 ) {
       count--
-    } else if (currentBtn.contains('lower') && count === 45) {
-      count = 0
-    }
+      if (count === 45) {
+        count = 43
+      } else if (count === 36) {
+        count = 33
+      }
+    } 
     seven.textContent = count
   })
 })
