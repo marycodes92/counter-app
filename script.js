@@ -11,7 +11,7 @@ buttons.forEach((button) => {
 
     if (currentBtn.contains('add') && count < 100) {
       count++
-    } else if (currentBtn.contains('lower') && count < 0 ) {
+    } else if (currentBtn.contains('lower') && count > 0 ) {
       count--
       if (count === 45) {
         count = 43
